@@ -3,7 +3,11 @@
     "rust-analyzer": {
       "initialization_options": {
         "cargo": {
-          "features": "all"
+          "features": "default"
+        },
+        "checkOnSave": {
+          "enable": true,
+          "command": "clippy"
         }
       }
     }

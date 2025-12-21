@@ -1,0 +1,12 @@
+# Cursor 配置文件 - Tree-sitter 项目优化
+
+## Rust 项目优化设置
+- 使用默认 features 而不是所有 features，减少内存占用
+- 排除 target 目录和 git 对象，减少文件监控负担
+- 启用 clippy 检查但限制范围
+
+## 如果仍然崩溃，尝试：
+1. 重启 Cursor
+2. 清理 Rust 构建缓存：`cargo clean`
+3. 检查系统内存使用情况
+4. 更新 Cursor 到最新版本

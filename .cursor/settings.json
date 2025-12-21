@@ -1,0 +1,25 @@
+{
+  "rust-analyzer.checkOnSave.enable": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.cargo.features": "default",
+  "rust-analyzer.cargo.allFeatures": false,
+  "rust-analyzer.inlayHints.enable": true,
+  "rust-analyzer.completion.autoimport.enable": true,
+  "files.watcherExclude": {
+    "**/target/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.zig-cache/**": true,
+    "**/.build/**": true
+  },
+  "search.exclude": {
+    "**/target": true,
+    "**/Cargo.lock": true,
+    "**/.git": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/target": true
+  }
+}
