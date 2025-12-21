@@ -1,0 +1,37 @@
+# Cursor Ignore File - 用于防止崩溃问题
+# 排除可能导致 Cursor 窗口崩溃的目录和文件
+
+# 测试语法文件（可能包含故意的错误语法或复杂的解析场景）
+test/fixtures/test_grammars/
+test/fixtures/grammars/
+test/fixtures/error_corpus/
+test/fixtures/template_corpus/
+
+# Git 内部文件
+.git/
+
+# 构建输出
+target/
+build/
+.build/
+zig-cache/
+.zig-cache/
+
+# 依赖
+node_modules/
+
+# 大型或生成的文件
+*.wasm
+*.dylib
+*.so
+*.dll
+*.a
+*.o
+
+# 日志文件
+log*.html
+
+# IDE 文件
+.idea/
+.vscode/
+.cache/
